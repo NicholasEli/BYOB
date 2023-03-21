@@ -1,0 +1,36 @@
+header {
+	.container--padding {
+		padding-top: multiply($gutter, 2.5);
+		padding-bottom: multiply($gutter, 2.5);
+	}
+
+	h1 {
+		margin-bottom: 0;
+		font-size: 30px;
+		font-weight: 900;
+	}
+	ul {
+		@include flex(row, center, center, wrap);
+		margin: $gutter 0 0;
+		list-style: none;
+
+		li {
+			margin-bottom: 0;
+
+			& + li {
+				margin-left: $gutter;
+			}
+		}
+
+		a {
+			padding: 5px 10px;
+			text-decoration: none;
+			font-weight: 500;
+			color: $gray-200;
+
+			&:hover {
+				color: #000;
+			}
+		}
+	}
+}

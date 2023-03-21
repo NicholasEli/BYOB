@@ -1,0 +1,17 @@
+.button {
+	&--primary {
+		background: $primary;
+		border-color: $primary;
+		color: #fff;
+
+		&:hover {
+			color: $primary;
+			background-color: #fff;
+			border-color: $primary;
+		}
+	}
+	&--disabled {
+		pointer-events: none;
+		background-color: #c1c1c1;
+	}
+}

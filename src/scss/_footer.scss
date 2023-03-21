@@ -1,0 +1,90 @@
+footer {
+	width: 100%;
+	background-color: $blue-900;
+	border-top: 1px solid #fff;
+
+	.container--padding {
+		padding: multiply($gutter, 6) $gutter;
+	}
+
+	h6 {
+		margin-bottom: 0;
+		font-size: 30px;
+		font-weight: 900;
+		color: $white-200;
+	}
+
+	p,
+	a {
+		color: $gray-100;
+		text-transform: uppercase;
+		font-size: 12px;
+		text-decoration: none;
+		font-weight: 600;
+		letter-spacing: 1px;
+		vertical-align: middle;
+	}
+	ul {
+		@include flex(row, center, center, wrap);
+		list-style: none;
+
+		@media (min-width: #{$md}) {
+			display: block;
+			text-align: left;
+		}
+
+		li {
+			margin-bottom: 0;
+
+			& + li {
+				margin-left: $gutter;
+
+				@media (min-width: #{$md}) {
+					margin-left: 0;
+					margin-top: $gutter;
+				}
+			}
+		}
+
+		a {
+			padding: 5px 10px;
+
+			&:hover {
+				color: #fff;
+			}
+		}
+	}
+
+	svg {
+		width: 15px;
+
+		* {
+			fill: $white-200;
+		}
+	}
+
+	.col-md-3 {
+		@media (min-width: #{$md}) {
+			order: 1;
+			padding-top: 50px;
+		}
+
+		& + .col-md-3 {
+			@media (min-width: #{$md}) {
+				order: 3;
+				text-align: right;
+
+				a {
+					font-size: 16px;
+				}
+			}
+		}
+	}
+
+	.col-md-6 {
+		@media (min-width: #{$md}) {
+			order: 2;
+			text-align: center;
+		}
+	}
+}

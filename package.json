@@ -1,0 +1,52 @@
+{
+  "name": "solver-standup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "dev": "concurrently --kill-others \"sass --watch ./src/scss/style.scss ./public/style.min.css --style compressed\" \"PORT=3000 react-scripts start\"",
+    "sass": "sass ./src/scss/style.scss ./public/style.min.css --style compressed",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@testing-library/jest-dom": "5.16.5",
+    "@testing-library/react": "13.4.0",
+    "@testing-library/user-event": "13.5.0",
+    "dayjs": "^1.11.7",
+    "file-saver": "2.0.5",
+    "firebase": "9.13.0",
+    "firebase-admin": "11.2.0",
+    "google-auth-library": ">=5.9.2",
+    "i": "0.3.7",
+    "install": "0.13.0",
+    "jsonwebtoken": ">=8.5.1",
+    "npm": "8.19.2",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-router-dom": "6.4.3",
+    "react-scripts": "5.0.1",
+    "react-toastify": "9.1.1",
+    "swiper": "8.4.4",
+    "web-vitals": "2.1.4"
+  },
+  "devDependencies": {
+    "concurrently": "7.5.0",
+    "netlify-cli": "12.1.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
